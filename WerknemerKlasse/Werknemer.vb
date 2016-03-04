@@ -61,9 +61,12 @@ Public Class Werknemer
         G.DrawRectangle(Pens.Black, InfoBox)
 
         G.DrawString("" &
-            "Naam Werknemer : " & Voornaam & " " & Naam & vbCrLf &
-            "Status Werknemer : " & Status.ToString & vbCrLf &
-            "Afdeling : " & Afdeling & vbCrLf &
-            "Aantekening : " & Aantekeningen, New Font("Tahoma", 9), Brushes.Black, New Point(InfoBox.X + 5, InfoBox.Y + 5))
+                    "Naam" & ControlChars.Tab & ControlChars.Tab & ": " & Voornaam & " " & Naam & vbCrLf &
+                    "Status" & ControlChars.Tab & ControlChars.Tab & ": " & Status.ToString & vbCrLf &
+                    "Afdeling" & ControlChars.Tab & ControlChars.Tab & ": " & Afdeling & vbCrLf &
+                    "Aantekening" & ControlChars.Tab & ": " & Aantekeningen,
+                     New Font("Tahoma", 9),
+                     Brushes.Black,
+                     InfoBox)
     End Sub
 End Class
