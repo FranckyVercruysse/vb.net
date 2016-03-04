@@ -22,7 +22,7 @@ Public Class Werknemer
     End Enum
 
     'wanneer een nieuwe instance van de klasse Werknemer gemaakt wordt... (constructor)
-    Public Sub New(GFX As Graphics, VNaam As String, FamilieNaam As String, Afd As String, Aantek As String, WerknStatus As Integer, Optional WerknemerFoto As Image = Nothing)
+    Public Sub New(GFX As Graphics, VNaam As String, FamilieNaam As String, Afd As String, Aantek As String, Status As Integer, Optional WerknemerFoto As Image = Nothing)
         G = GFX
 
         Voornaam = VNaam
@@ -30,7 +30,7 @@ Public Class Werknemer
         Afdeling = Afd
         Aantekeningen = Aantek
 
-        Select Case WerknStatus
+        Select Case Status
             Case 0
                 Status = WerknemerStatus.Actief
             Case 1

@@ -28,6 +28,8 @@ Partial Class Form1
         'OFDFoto
         '
         Me.OFDFoto.FileName = "OpenFileDialog1"
+        Me.OFDFoto.Filter = "JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Fi" &
+    "les (*.gif)|*.gif"""
         '
         'Form1
         '
